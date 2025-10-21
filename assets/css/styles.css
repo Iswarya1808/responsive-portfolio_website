@@ -508,7 +508,8 @@ img {
   }
   .home__cv{
     font-size: var(--normal-font-size);
-    rotate: 0;
+    rotate: 0deg;
+    right: 0;
   }
 }
   
