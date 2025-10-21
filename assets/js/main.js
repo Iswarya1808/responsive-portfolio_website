@@ -1,8 +1,8 @@
 /*=============== HOME SPLIT TEXT ===============*/
 const { animate, text, stagger } = anime
 
-const { chars: chars1 } = text.split('.home__profession-1', {chars: true }}
-const { chars: chars2 } = text.split('.home__profession-2', {chars: true }}
+const { chars: chars1 } = text.split('.home__profession-1', {chars: true })
+const { chars: chars2 } = text.split('.home__profession-2', {chars: true })
 
 animate(chars1, {
   y: [
@@ -54,4 +54,5 @@ animate(chars2, {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 
