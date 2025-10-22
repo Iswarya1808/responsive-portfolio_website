@@ -777,7 +777,7 @@ img {
 
 .testimonials__card{
   position: relative;
-  width:320px;
+  width: 320px;
   background-color: var(--container-color);
   padding: 1.5rem 1rem 2.5rem;
   margin-inline: 1rem;
@@ -796,7 +796,7 @@ img {
 
 .testimonials__data{
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
 
 .testimonials__img{
@@ -855,7 +855,7 @@ img {
     transform: translateX(0);
   }
   100%{
-    transform: translateY(-50%)
+    transform: translateX(-50%)
   }
 
 }
@@ -1151,8 +1151,15 @@ img {
   .testimonials__container::after{
     left: 0;
     background: linear-gradient(90deg,
-                hsla(0, 0%, 0%, 0) 0%,
-                  hsl(0, 0%, 0%) 100%);
+                hsl(0, 0%, 0%) 0%,
+                hsla(0, 0%, 0%, 0) 100%);
+  }
+  .testimonials__container::before{
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(90deg,
+               hsla(0, 0%, 0%, 0)0%,
+               hsl(0, 0%, 0%)100%);
   }
   .testimonials__card{
     width: 370px;
