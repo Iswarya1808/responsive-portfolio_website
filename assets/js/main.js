@@ -47,7 +47,7 @@ const swiperProjects = new Swiper('.projects__swiper', {
 
 /*=============== WORK TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querrySelectorAll('[data-content]')
+      tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach((tab) => {
   tab.addEventListener('click', () => {
@@ -63,7 +63,32 @@ tabs.forEach((tab) => {
 })
 
 /*=============== SERVICES ACCORDION ===============*/
+const servicesButtons = document.querySelectorAll('.services__button')
 
+servicesButtons.forEach(button => {
+  const heightInfo = document.querySelector('services__info')
+  heightInfo.computedStyleMap.height = heightInfo.scrollHeight + 'px'
+
+  button.addEventListener('click', () => {
+    const servicesCards = document.querySelectorAll('.services__card'),
+          currentCard = button.parentNode,
+          currentInfo = currentCard.querySelector('.services__info'),
+          isCardOpen =  currentCard.lassList.contains('services-open')
+    
+    servicesCards.forEach(card => {
+      card.classList.replace('services-open', 'services-close')
+
+      const info = card.querySelector('.services__info')
+            info.style.height = '0'
+    })
+
+    if(!isCardOpen){
+      currentCard.classList.replace('services-clode', 'services-open')
+      currentInfo.style.height = currentInfo.scrollHeight + 'px'
+    }
+
+  })
+})
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
 
