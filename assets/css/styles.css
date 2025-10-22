@@ -711,7 +711,7 @@ img {
   gap: .5rem .25rem;
 }
 
-.services_skill{
+.services__skill{
   background-color: var(--container-color);
   color: var(--title-color);
   border: 1px solid var(--title-color);
@@ -759,7 +759,9 @@ img {
 
 
 /* Rotate icon */
-
+.services-open .services__button i{
+  rotate: -180deg;
+}
 
 /*=============== TESTIMONIALS ===============*/
 
