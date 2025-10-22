@@ -91,7 +91,7 @@ servicesButtons.forEach(button => {
 })
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
-const tracks = document.querySelectorAll('.testimonials__Content')
+const tracks = document.querySelectorAll('.testimonials__content')
 
 tracks.forEach(track => {
   const cards = [...track.children]
@@ -116,4 +116,5 @@ tracks.forEach(track => {
 /* Hide custom cursor on links */
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/ 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
