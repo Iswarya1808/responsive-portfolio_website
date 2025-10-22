@@ -422,7 +422,6 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
-
 .about__image{
   position: relative;
   justify-self: center;
@@ -462,6 +461,7 @@ img {
   text-align: initial;
   margin-left: 1.5rem;
 }
+  
 .projects__card{
   position: relative;
   background-color: var(--container-color);
@@ -495,6 +495,7 @@ img {
   font-weight: var(--font-regular);
   font-size: var(--h3-font-size);
 }
+  
 .projects__data{
   margin-block: 2rem;
 }
@@ -536,10 +537,12 @@ img {
 .projects__button:hover{
   box-shadow: 0 0 24px var(--first-color);
 }
+  
 .projects__image: hover .projects__button{
   opacity: 1;
   pointer-events: initial;
 }
+  
 /* Swiper class */
 
 
