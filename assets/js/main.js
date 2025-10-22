@@ -66,7 +66,7 @@ tabs.forEach((tab) => {
 const servicesButtons = document.querySelectorAll('.services__button')
 
 servicesButtons.forEach(button => {
-  const heightInfo = document.querySelector('services__info')
+  const heightInfo = document.querySelector('.services__info')
   heightInfo.style.height = heightInfo.scrollHeight + 'px'
 
   button.addEventListener('click', () => {
@@ -109,6 +109,7 @@ servicesButtons.forEach(button => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 
 
 
