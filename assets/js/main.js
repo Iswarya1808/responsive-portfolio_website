@@ -36,12 +36,13 @@ const swiperProjects = new Swiper('.projects__swiper', {
 
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  }
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false,
+//   }
 })
 
 /*=============== WORK TABS ===============*/
@@ -69,3 +70,4 @@ const swiperProjects = new Swiper('.projects__swiper', {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
