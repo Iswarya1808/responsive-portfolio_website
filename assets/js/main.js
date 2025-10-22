@@ -66,14 +66,14 @@ tabs.forEach((tab) => {
 const servicesButtons = document.querySelectorAll('.services__button')
 
 servicesButtons.forEach(button => {
-  const heightInfo = document.querySelector('.services__info')
+  const heightInfo = document.querySelector('services__info')
   heightInfo.style.height = heightInfo.scrollHeight + 'px'
 
   button.addEventListener('click', () => {
     const servicesCards = document.querySelectorAll('.services__card'),
           currentCard = button.parentNode,
           currentInfo = currentCard.querySelector('.services__info'),
-          isCardOpen =  currentCard.classList.contains('services-open')
+          isCardOpen =  currentCard.lassList.contains('services-open')
     
     servicesCards.forEach(card => {
       card.classList.replace('services-open', 'services-close')
@@ -83,7 +83,7 @@ servicesButtons.forEach(button => {
     })
 
     if(!isCardOpen){
-      currentCard.classList.replace('services-close', 'services-open')
+      currentCard.classList.replace('services-clode', 'services-open')
       currentInfo.style.height = currentInfo.scrollHeight + 'px'
     }
 
@@ -91,7 +91,15 @@ servicesButtons.forEach(button => {
 })
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
+const tracks = document.querySelectorAll('.testimonials__Content')
 
+tracks.forEach(track => {
+  const cards = [...track.children]
+
+  for(const card of cards){
+    track.appendChild(card.cloneNode(true))
+  }
+})
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
 
@@ -108,8 +116,4 @@ servicesButtons.forEach(button => {
 /* Hide custom cursor on links */
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-
-
-
+/*=============== SCROLL REVEAL ANIMATION ===============*/ 
