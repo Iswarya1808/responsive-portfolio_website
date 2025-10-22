@@ -476,7 +476,7 @@ img {
   bottom: 0;
 }
 
-.projects__numvber, .projects__data, .projects__image{
+.projects__number, .projects__data, .projects__image{
   position: relative;
   z-index: 1;
 }
@@ -527,10 +527,10 @@ img {
  border-radius: 50%;
  color: var(--title-color);
  font-size: 2rem;
-position: absolute;
-  top: .75rem;
-  right: .75rem;
-  transition: box-shadow .4s, capacity .4s;
+ position: absolute;
+ top: .75rem;
+ right: .75rem;
+ transition: box-shadow .4s, capacity .4s;
 }
 
 .projects__button:hover{
