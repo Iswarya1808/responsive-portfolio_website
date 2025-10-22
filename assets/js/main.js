@@ -67,7 +67,7 @@ const servicesButtons = document.querySelectorAll('.services__button')
 
 servicesButtons.forEach(button => {
   const heightInfo = document.querySelector('services__info')
-  heightInfo.computedStyleMap.height = heightInfo.scrollHeight + 'px'
+  heightInfo.style.height = heightInfo.scrollHeight + 'px'
 
   button.addEventListener('click', () => {
     const servicesCards = document.querySelectorAll('.services__card'),
