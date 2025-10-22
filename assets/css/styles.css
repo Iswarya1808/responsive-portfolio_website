@@ -172,7 +172,7 @@ img {
   height: 250px;
   background: linear-gradient(180deg,
               var(--first-color) 0%,
-                              var(--first-color-alt) 100%);
+              var(--first-color-alt) 100%);
   border-radius: 50%;
   filter: blur(50px);
   position: absolute;
@@ -507,6 +507,7 @@ img {
 
 .projects__subtitle{
   font-family: var(--second-font);
+  font-size: var(--small-font-size);
   margin-bottom: .5rem;
 }
 
@@ -525,13 +526,15 @@ img {
   height: 48px;
   background-color: var(--body-color);
   border: 3px solid var(--first-color);
- border-radius: 50%;
- color: var(--title-color);
- font-size: 2rem;
- position: absolute;
- top: .75rem;
- right: .75rem;
- transition: box-shadow .4s, capacity .4s;
+  border-radius: 50%;
+  color: var(--title-color);
+  font-size: 2rem;
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: box-shadow .4s, capacity .4s;
 }
 
 .projects__button:hover{
@@ -539,8 +542,8 @@ img {
 }
   
 .projects__image:hover .projects__button{
-  opacity: 1;
-  pointer-events: initial;
+   opacity: 1;
+   pointer-events: initial;
 }
   
 /* Swiper class */
