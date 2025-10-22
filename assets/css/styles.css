@@ -538,7 +538,7 @@ img {
   box-shadow: 0 0 24px var(--first-color);
 }
   
-.projects__image: hover .projects__button{
+.projects__image:hover .projects__button{
   opacity: 1;
   pointer-events: initial;
 }
