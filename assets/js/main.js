@@ -83,7 +83,7 @@ servicesButtons.forEach(button => {
     })
 
     if(!isCardOpen){
-      currentCard.classList.replace('services-clode', 'services-open')
+      currentCard.classList.replace('services-close', 'services-open')
       currentInfo.style.height = currentInfo.scrollHeight + 'px'
     }
 
@@ -109,5 +109,6 @@ servicesButtons.forEach(button => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 
 
