@@ -73,7 +73,7 @@ servicesButtons.forEach(button => {
     const servicesCards = document.querySelectorAll('.services__card'),
           currentCard = button.parentNode,
           currentInfo = currentCard.querySelector('.services__info'),
-          isCardOpen =  currentCard.lassList.contains('services-open')
+          isCardOpen =  currentCard.classList.contains('services-open')
     
     servicesCards.forEach(card => {
       card.classList.replace('services-open', 'services-close')
@@ -109,4 +109,5 @@ servicesButtons.forEach(button => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 
