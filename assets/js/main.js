@@ -102,8 +102,18 @@ tracks.forEach(track => {
 })
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
+const copyBtn = document.getElementById('contact-btn'),
+  copyEmail = document.getElementById('contact-email').textContent
 
+copyBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText(copyEmail).then(() => {
+    copyBtn.innerHTML = 'Email Copied <i class="ri-check-line"></i>'
 
+    setTimeout(() => {
+      copyBtn.innerHTML = Copy email <i class="ri-file-copy-line"></i>'
+    }, 2000)
+  })
+})
 /*=============== CURRENT YEAR OF THE FOOTER ===============*/ 
 
 
@@ -117,4 +127,5 @@ tracks.forEach(track => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
 
