@@ -717,7 +717,7 @@ img {
   border: 1px solid var(--title-color);
   padding: 4px 10px;
   border-radius: 4rem;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   font-family: var(--second-font);
 }
 
